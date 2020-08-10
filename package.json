@@ -1,0 +1,27 @@
+{
+  "name": "read-me-generator",
+  "version": "1.0.0",
+  "description": "Read Me Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hoang Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hngdngng/Read-Me-Generator.git"
+  },
+  "keywords": [
+    "node",
+    "readme",
+    "inquirer"
+  ],
+  "bugs": {
+    "url": "https://github.com/hngdngng/Read-Me-Generator/issues"
+  },
+  "homepage": "https://github.com/hngdngng/Read-Me-Generator#readme"
+}
