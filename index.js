@@ -1,9 +1,27 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generator = require("./utils/generateMarkdown");
+const generatorRM = require("./utils/generateMarkdown");
+const generatorL = require("./utils/generateLicense");
+
 
 // array of questions for user
 const questions = [
+    {
+        name: "name",
+        message: "Your Full Name:",
+    },
+    {
+        name: "year",
+        message: "Copyright Year:",
+    },
+    {
+        name: "github",
+        message: "Your GitHub username:",
+    },
+    {
+        name: "email",
+        message: "Your Email Address:",
+    },
     {
         name: "title",
         message: "Project Title:",
@@ -25,8 +43,8 @@ const questions = [
         name: "license",
         message: "Select your license",
         choices: [
-            "GNU GPLv3",
-            "MIT"
+            "MIT",
+            "BSD"
         ]
     },
     {
@@ -37,17 +55,9 @@ const questions = [
         name: "test",
         message: "Test Instructions",
     },
-    {
-        name: "github",
-        message: "GitHub username:",
-    },
-    {
-        name: "email",
-        message: "Email Address:",
-    },
 ];
 
-// function to write README file
+// function to write file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
         if (err) {
@@ -57,17 +67,23 @@ function writeToFile(fileName, data) {
     })
 }
 
+
 // function to initialize program
 function init() {
             inquirer
                 .prompt(questions)
                 .then(data => {
-                    generate(data)
+                    generateReadMe(data)
+                    generateLicense(data)
                 })
         }
 
-function generate(data) {
-    writeToFile(`${data.title}.md`, generator.generateMarkdown(data));
+function generateReadMe(data) {
+    writeToFile(`${data.title}.md`, generatorRM.generateMarkdown(data));
+}
+
+function generateLicense(data) {
+    writeToFile(`LICENSE.md`, generatorL.generateLicense(data.name, data.year, data.license));
 }
 
 // function call to initialize program
