@@ -19,7 +19,7 @@
       Make sure you are in the correct folder when using your terminal
 
   ## Usage
-      Inovke with node index.js
+      Invoke with node index.js
       Respond to prompts in the terminal, your responses will be used to populate the README.md file.
 
   ## License

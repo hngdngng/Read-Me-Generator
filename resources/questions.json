@@ -1,0 +1,51 @@
+[
+    {
+        "name": "name",
+        "message": "Your Full Name:"
+    },
+    {
+        "name": "year",
+        "message": "Copyright Year:"
+    },
+    {
+        "name": "github",
+        "message": "Your GitHub username:"
+    },
+    {
+        "name": "email",
+        "message": "Your Email Address:"
+    },
+    {
+        "name": "title",
+        "message": "Project Title:"
+    },
+    {
+        "name": "description",
+        "message": "Description:"
+    },
+    {
+        "name": "installation",
+        "message": "Installation Instructions:"
+    },
+    {
+        "name": "usage",
+        "message": "Usage Information:"
+    },
+    {
+        "type": "list",
+        "name": "license",
+        "message": "Select your license",
+        "choices": [
+            "MIT",
+            "BSD"
+        ]
+    },
+    {
+        "name": "contributing",
+        "message": "Contribution Guidelines"
+    },
+    {
+        "name": "test",
+        "message": "Test Instructions"
+    }
+]
