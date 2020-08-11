@@ -14,10 +14,13 @@
   * [Questions](#questions)
 
   ## Installation
-      1.Fork & clone this project locally\2.Run npm install in your bash/command line\Make sure you are in the correct folder when using your terminal
+      1.Fork & clone this project locally  
+      2.Run npm install in your bash/command line  
+      Make sure you are in the correct folder when using your terminal
 
   ## Usage
-      Inovke with node index.js\Respond to prompts in the terminal, your responses will be used to populate the README.md file.
+      Inovke with node index.js
+      Respond to prompts in the terminal, your responses will be used to populate the README.md file.
 
   ## License
   MIT (c) Hoang Nguyen
@@ -31,6 +34,6 @@
 
   ## Questions
   For questions, reach out to me here:
-  Github: https://github.com/hngdngng
+  Github: https://github.com/hngdngng  
   Email: [hoang.d.nguyen@outlook.com](mailto:hoang.d.nguyen@outlook.com)
   
