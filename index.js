@@ -79,7 +79,7 @@ function init() {
         }
 
 function generateReadMe(data) {
-    writeToFile(`${data.title}.md`, generatorRM.generateMarkdown(data));
+    writeToFile(`README.md`, generatorRM.generateMarkdown(data));
 }
 
 function generateLicense(data) {
