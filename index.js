@@ -13,10 +13,6 @@ const questions = [
         message: "Description:",
     },
     {
-        name: "tOC",
-        message: "Table of Content:",
-    },
-    {
         name: "installation",
         message: "Installation Instructions:",
     },
@@ -26,12 +22,20 @@ const questions = [
     },
     {
         type: "list",
-        message: "Select your license",
         name: "license",
+        message: "Select your license",
         choices: [
             "GNU GPLv3",
             "MIT"
         ]
+    },
+    {
+        name: "contributing",
+        message: "Contribution Guidelines",
+    },
+    {
+        name: "test",
+        message: "Test Instructions",
     },
     {
         name: "github",
@@ -58,13 +62,12 @@ function init() {
             inquirer
                 .prompt(questions)
                 .then(data => {
-                    console.log(data);
                     generate(data)
                 })
         }
 
 function generate(data) {
-    generator.generateMarkdown(data);
+    writeToFile(`${data.title}.md`, generator.generateMarkdown(data));
 }
 
 // function call to initialize program
