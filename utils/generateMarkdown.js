@@ -16,10 +16,10 @@ const generateMarkdown = (data) => {
   * [Questions](#questions)
 
   ## Installation
-      ${data.installation}
+  ${createNumList(data.installation)}
 
   ## Usage
-      ${data.usage}
+  ${createNumList(data.usage)}
 
   ## License
   ${data.license} (c) ${data.name}
@@ -29,18 +29,19 @@ const generateMarkdown = (data) => {
   ${data.contributing}
 
   ## Test Instructions
-  ${data.test}
+  ${createNumList(data.test)}
 
   ## Questions
-  For questions, reach out to me here:
-  Github: https://github.com/${data.github}  
+  For questions, reach out to me here:  
+  Github: https://github.com/${data.github}      
   Email: [${data.email}](mailto:${data.email})
   `;
 }
-/* 
-  New function
-  Find all instances where it is a digit followed by a . or an )
-  Replace d. or d) with \n d. or \n d) if digit is not 1
-*/
+
+function createNumList (str) {
+  const listArray = str.split("#");
+  const list = listArray.join('  \n');
+  return list
+}
 
 module.exports.generateMarkdown = generateMarkdown;
