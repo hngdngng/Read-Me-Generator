@@ -14,16 +14,16 @@
   * [Questions](#questions)
 
   ## Installation
-    
-    1. Fork & clone this project locally   
-    2. Run npm install in your bash/command line   
-  Make sure you are in the correct folder when using your terminal.
+      
+1. Fork & clone this project locally   
+2. Run npm install in your bash/command line
 
   ## Usage
-    
-    1. Invoke with node index.js   
-    2. Respond to prompts in the terminal, your responses will be used to populate the README.md file.   
-    Note. Insert '#' when you would like to indent, this is useful when making a list of installation, usage, and test instructions. 
+      
+1. Invoke with node index.js   
+2. Respond to prompts in the terminal, your responses will be used to populate the README.md file.   
+Note. Insert '  
+' when you would like to indent, this is useful when making a list of installation, usage, and test instructions.
 
   ## License
   MIT (c) Hoang Nguyen
@@ -33,7 +33,7 @@
   For major changes, please open an issue or email me to discuss the scope of the change.
 
   ## Test Instructions
-    Follow the installation and usage instructions provided. Test the program by responding to the series of prompts with 't' for test. Upon completion your terminal should display 'Success!' when a README.md and LICENSE.md file are generated. The README.md and LICENSE.md files should have 't' in the appropriate places.
+  Follow the installation and usage instructions provided. Test the program by responding to the series of prompts with 't' for test. Upon completion your terminal should display 'Success!' when a README.md and LICENSE.md file are generated. The README.md and LICENSE.md files should have 't' in the appropriate places.
 
   ## Questions
   For questions, reach out to me here:  

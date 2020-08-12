@@ -29,7 +29,7 @@ const generateMarkdown = (data) => {
   ${data.contributing}
 
   ## Test Instructions
-    ${createNumList(data.test)}
+  ${createNumList(data.test)}
 
   ## Questions
   For questions, reach out to me here:  
