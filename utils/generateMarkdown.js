@@ -16,10 +16,10 @@ const generateMarkdown = (data) => {
   * [Questions](#questions)
 
   ## Installation
-  ${createNumList(data.installation)}
+    ${createNumList(data.installation)}
 
   ## Usage
-  ${createNumList(data.usage)}
+    ${createNumList(data.usage)}
 
   ## License
   ${data.license} (c) ${data.name}
@@ -29,7 +29,7 @@ const generateMarkdown = (data) => {
   ${data.contributing}
 
   ## Test Instructions
-  ${createNumList(data.test)}
+    ${createNumList(data.test)}
 
   ## Questions
   For questions, reach out to me here:  
