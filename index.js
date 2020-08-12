@@ -26,12 +26,12 @@ function init() {
 
 // function to generate README.md
 function generateReadMe(data) {
-    writeToFile(`README.md`, generatorRM.generateMarkdown(data));
+    writeToFile(`READMEtest.md`, generatorRM.generateMarkdown(data));
 }
 
 // function to generate LICENSE.md
 function generateLicense(data) {
-    writeToFile(`LICENSE.md`, generatorL.generateLicense(data.name, data.year, data.license));
+    writeToFile(`LICENSEtest.md`, generatorL.generateLicense(data.name, data.year, data.license));
 }
 
 // function call to initialize program
