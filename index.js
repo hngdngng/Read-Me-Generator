@@ -2,7 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generatorRM = require("./utils/generateMarkdown");
 const generatorL = require("./utils/generateLicense");
-const questions = JSON.parse(fs.readFileSync('./resources/questions.json'));
+const questions = JSON.parse(fs.readFileSync('./resources/questions.json')); //readFileSync to read in sync with js load so questions are ready before init call
 
 // function to write file
 function writeToFile(fileName, data) {

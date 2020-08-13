@@ -1,7 +1,6 @@
 // function to generate markdown for README
 const generateMarkdown = (data) => {
-  return `
-  # ${data.title} 
+  return `  # ${data.title} 
   ![License Badge](https://img.shields.io/badge/License-${data.license}-Green)
   
   ## Description 
@@ -16,10 +15,10 @@ const generateMarkdown = (data) => {
   * [Questions](#questions)
 
   ## Installation
-    ${createNumList(data.installation)}
+  ${createNumList(data.installation)}
 
   ## Usage
-    ${createNumList(data.usage)}
+  ${createNumList(data.usage)}
 
   ## License
   ${data.license} (c) ${data.name}   
@@ -33,15 +32,14 @@ const generateMarkdown = (data) => {
 
   ## Questions
   For questions, reach out to me here:  
-  Github: https://github.com/${data.github}      
+  Github: https://github.com/${data.github}  
   Email: [${data.email}](mailto:${data.email})
   `;
 }
 
 function createNumList (str) {
   const listArray = str.split("#");
-  const list = listArray.join('  \n');
-  return list
+  return listArray.join('  \n');
 }
 
 module.exports.generateMarkdown = generateMarkdown;

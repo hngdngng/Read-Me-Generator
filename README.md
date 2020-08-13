@@ -3,7 +3,7 @@
   ![License Badge](https://img.shields.io/badge/License-MIT-Green)
   
   ## Description 
-  Read-Me-Generator is a simple command-line application that dynamically generates a README.md and LICENSE.md following standard template and formatting. The application uses Node.js to get user input from a series of prompts using the Inquirer package. User inputs are then placed accordingly into easy-to-follow README.md, and LICENSE.md file.
+  Read-Me-Generator is a simple command-line application that dynamically generates a README.md and LICENSE.md following standard template and formatting. The application uses Node.js to get user input from a series of prompts using the Inquirer package. User inputs are then placed accordingly into an easy-to-follow README.md, and LICENSE.md file.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -22,8 +22,13 @@
       
     1. Invoke with node index.js   
     2. Respond to prompts in the terminal, your responses will be used to populate the README.md file.   
-    Note. Insert '#' when you would like to indent, this is useful when making a list of installation, usage, and test instructions.
-  ![Image of command line terminal](./resources/CLTerminal.png)
+    Note. Insert '#' when you would like to indent, this is useful when 
+    making a list of installation, usage, and test instructions.
+    
+  Video Walkthrough  
+  [![Watch the video](https://img.youtube.com/vi/GtHyGE1QyRI/default.jpg)](https://youtu.be/GtHyGE1QyRI)  
+  Image of Prompts    
+  [![Image of command line terminal](./resources/CLTerminal.png)  
 
   ## License
   MIT (c) Hoang Nguyen  
