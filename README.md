@@ -26,7 +26,7 @@
     making a list of installation, usage, and test instructions.
     
   Video Walkthrough  
-  [![Watch the video](https://img.youtube.com/vi/GtHyGE1QyRI/default.jpg)](https://youtu.be/GtHyGE1QyRI)  
+  [![Watch the video](https://img.youtube.com/vi/RD2wPy3cmBU/default.jpg)](https://youtu.be/RD2wPy3cmBU)  
   Image of Prompts    
   [![Image of command line terminal](./resources/CLTerminal.png)  
 
